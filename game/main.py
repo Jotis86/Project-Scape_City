@@ -3,7 +3,7 @@
 import sys
 import os
 
-# Añadir el directorio raíz al PYTHONPATH
+# Add the root directory to the PYTHONPATH
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from game.locations import INIT_GAME_STATE

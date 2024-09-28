@@ -4,12 +4,15 @@ import time
 import threading
 from game.locations import object_relations, INIT_GAME_STATE
 
+# Print a line break
 def linebreak():
     """
     Print a line break.
     """
     print("\n\n")
 
+
+# Start the game. The player wakes up in a strange place and must escape
 def start_game(game_state):
     """
     Start the game. The player wakes up in a strange place and must escape.
@@ -19,6 +22,8 @@ def start_game(game_state):
     start_timer(game_state)
     play_location(game_state, game_state["current_location"])
 
+
+# Start a timer for 5 minutes. If the time runs out, the player loses the game
 def start_timer(game_state):
     """
     Start a timer for 5 minutes. If the time runs out, the player loses the game.
@@ -34,6 +39,9 @@ def start_timer(game_state):
     timer_thread = threading.Thread(target=timer)
     timer_thread.start()
 
+
+# Play a location. Check if the location being played is the target location
+# If it is, the game ends with success. Otherwise, let the player explore or examine items
 def play_location(game_state, location):
     """
     Play a location. Check if the location being played is the target location.
@@ -63,6 +71,8 @@ def play_location(game_state, location):
             play_location(game_state, location)
         linebreak()
 
+
+# Explore a location. List all items and streets belonging to this location
 def explore_location(location):
     """
     Explore a location. List all items and streets belonging to this location.
@@ -70,6 +80,9 @@ def explore_location(location):
     items = [i["name"] for i in object_relations[location["name"]]]
     print(f"You explore the location. This is {location['name']}. You find: {', '.join(items)}")
 
+
+# From object_relations, find the two locations connected by the given street
+# Return the location that is not the current_location
 def get_next_location_of_street(street, current_location):
     """
     From object_relations, find the two locations connected by the given street.
@@ -79,7 +92,9 @@ def get_next_location_of_street(street, current_location):
     for location in connected_locations:
         if not current_location == location:
             return location
+        
 
+# End the game if the player examines the dog or the seagull
 def lost(game_state):
     """
     End the game if the player examines the dog or the seagull.
@@ -89,6 +104,11 @@ def lost(game_state):
     game_state["end_time"] = time.time()
     final_report(game_state)
 
+
+# Examine an item, which could be a street or furniture
+# Ensure the intended item belongs to the current location
+# If the item is a street, check if the required map has been collected
+# Otherwise, if the item is not a street, check if it contains a map
 def examine_item(game_state, item_name):
     """
     Examine an item, which could be a street or furniture.
@@ -139,6 +159,8 @@ def examine_item(game_state, item_name):
     else:
         play_location(game_state, current_location)
 
+
+# Generate the final report including maps collected, time elapsed, time remaining, and moves made
 def final_report(game_state):
     """
     Generate the final report including maps collected, time elapsed, time remaining, and moves made.
