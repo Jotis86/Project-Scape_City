@@ -2,7 +2,7 @@ import sys
 import os
 import pytest
 
-# Añadir el directorio raíz al PYTHONPATH
+# Add the root directory to the PYTHONPATH
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from game.main import play_location
@@ -13,61 +13,61 @@ def game_state():
     return INIT_GAME_STATE.copy()
 
 def test_examine_item(game_state):
-    # Configurar el estado del juego
+    # Set game state
     game_state["current_location"] = "park"
     game_state["items_collected"] = []
 
-    # Simular la función de Streamlit
+    # Simulate Streamlit function
     def mock_write(message):
         print(message)
 
-    # Reemplazar la función de Streamlit con la simulada
+    # Replace Streamlit function with mock one
     st = type('obj', (object,), {'write': mock_write, 'session_state': {'game_state': game_state}})
 
-    # Examinar un objeto existente
+    # Examine an existing object
     examine_item("tree")
     assert "map for square" in game_state["items_collected"]
 
-    # Examinar un objeto inexistente
+    # Examine a non-existent object
     examine_item("nonexistent")
     assert "map for square" in game_state["items_collected"]
 
 def test_can_move_to(game_state):
-    # Configurar el estado del juego
+    # Set game state
     game_state["items_collected"] = ["map for square"]
 
-    # Simular la función de Streamlit
+    # Simulate Streamlit function
     def mock_write(message):
         print(message)
 
-    # Reemplazar la función de Streamlit con la simulada
+    # Replace Streamlit function with mock one
     st = type('obj', (object,), {'write': mock_write, 'session_state': {'game_state': game_state}})
 
-    # Intentar moverse a una ubicación accesible
+    # Try to move to an accessible location
     assert can_move_to("square") == True
 
-    # Intentar moverse a una ubicación inaccesible
+    # Try to move to an inaccessible location
     assert can_move_to("beach") == False
 
 def test_play_location(game_state):
-    # Configurar el estado del juego
+    # Set game state
     game_state["current_location"] = "park"
     game_state["items_collected"] = []
     game_state["locations_visited"] = []
     game_state["start_time"] = 0
     game_state["game_over"] = False
 
-    # Simular la función de Streamlit
+    # Simulate Streamlit function
     def mock_write(message):
         print(message)
 
-    # Reemplazar la función de Streamlit con la simulada
+    # Replace Streamlit function with mock one
     st = type('obj', (object,), {'write': mock_write, 'session_state': {'game_state': game_state}})
 
-    # Jugar en una ubicación
+    # Play in one location
     play_location("park")
     assert "park" in game_state["locations_visited"]
 
-    # Intentar jugar en una ubicación inaccesible
+    # Try to play in an inaccessible location
     play_location("beach")
     assert "beach" not in game_state["locations_visited"]
