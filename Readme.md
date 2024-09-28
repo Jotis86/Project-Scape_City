@@ -19,6 +19,9 @@ The objective of this project is to develop an interactive city escape game wher
 - 🌐 **Streamlit**: Framework for creating interactive web applications.
 - 🧵 **Threading**: To handle the game timer.
 - 🗂️ **Git**: Version control.
+- 💻 **Visual Studio Code**: Code editor.
+- 📓 **Google Colab**: Online Jupyter notebook environment.
+- 📘 **Jupyter Notebooks**: Interactive computing environment.
 
 ## 🏗️ Development Process
 
@@ -69,6 +72,18 @@ We have created an interactive web application using Streamlit. This application
         ```sh
         python -m streamlit run streamlit_app.py
         ```
+
+## 👥 Group Members
+
+We are the members of Group 5 who participated in this project:
+- Carlota Gordillo
+- Juan Duran
+- Enia Lahcene
+- Javier Rodríguez
+- Laura Sánchez
+- Daniela García
+
+Congratulations to my team for the excellent work done! 🎉
 
 ## 📞 Contact
 
