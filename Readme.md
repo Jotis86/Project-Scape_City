@@ -96,4 +96,4 @@ Collaborations are welcome! If you have any suggestions or want to collaborate o
 
 ---
 
-Thank you for your interest in Scape City! I hope you enjoy playing as much as I enjoyed developing it. 🎉
+Thank you for your interest in Scape City! I hope you enjoy playing as much as I enjoyed developing it! 🎉
