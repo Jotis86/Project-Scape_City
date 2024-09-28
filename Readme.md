@@ -50,7 +50,7 @@ The result is an interactive escape game that can be played in a web browser. Pl
 ## 📄 Project Presentation
 
 You can find the project presentation in PowerPoint at the following path:
-- [📊 Scape City Presentation](docs/Scape_City_Presentation.pptx)
+- [📊 Scape City Presentation]([docs/Scape_City_Presentation.pptx](https://github.com/Jotis86/Project-Scape_City/tree/main/docs))
 
 ## 🌐 Web App (Streamlit)
 
