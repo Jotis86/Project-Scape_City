@@ -92,7 +92,7 @@ For any inquiries or suggestions, you can contact me at:
 
 ## 🤝 Collaborations and Suggestions
 
-Collaborations are welcome! If you have any suggestions or want to collaborate on the project, feel free to open an issue or send a pull request on the repository.
+Collaborations are welcome! If you have any suggestions or want to collaborate on the project, feel free to open an issue or send a pull request on the repository!
 
 ---
 
