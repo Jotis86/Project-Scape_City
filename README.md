@@ -1,5 +1,16 @@
 # 🏙️ Scape City
 
+![Imagen del Juego](images/imagen.png)
+
+![Commits](https://img.shields.io/github/commit-activity/m/Jotis86/Project-Scape_City)
+![Issues Abiertas](https://img.shields.io/github/issues/Jotis86/Project-Scape_City)
+![Pull Requests](https://img.shields.io/github/issues-pr/Jotis86/Project-Scape_City)
+![Forks](https://img.shields.io/github/forks/Jotis86/Project-Scape_City)
+![Tamaño del Repositorio](https://img.shields.io/github/repo-size/Jotis86/Project-Scape_City)
+
+
+## 📜 Description
+
 This project is an interactive city escape game implemented with Streamlit. The goal of the game is to explore different locations in the city, collect items, and find a way to escape.
 
 ## 🎯 Project Objective
