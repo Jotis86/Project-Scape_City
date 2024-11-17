@@ -46,7 +46,7 @@ The objective of this project is to develop an interactive city escape game wher
 
 The result is an interactive escape game that can be played in a web browser. Players can explore different locations, collect items, and find a way to escape the city before time runs out.
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 - 📁 Game
     - 📜 functions.py
@@ -55,6 +55,8 @@ The result is an interactive escape game that can be played in a web browser. Pl
     - 📜 streamlit_app.py
 - 📁 test
     - 📜 test_game.py
+- 📁 images
+    - 📄 imagen.png
 - 📄 .gitignore
 - 📄 README.md
 - 📄 requirements.txt
@@ -100,10 +102,11 @@ Congratulations to my team for the excellent work done! 🎉
 
 For any inquiries or suggestions, you can contact me at:
 - 📧 **Email**: jotaduranbon@gmail.com
+- 💼 **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/juan-duran-bon)
 
 ## 🤝 Collaborations and Suggestions
 
-Collaborations are welcome! If you have any suggestions or want to collaborate on the project, feel free to open an issue or send a pull request on the repository!
+Collaborations are welcome! If you have any suggestions or want to collaborate on the project, feel free to open an issue or send a pull request on the repository. You can also reach out to me directly via email or LinkedIn. Let's work together to make this project even better!
 
 ---
 
