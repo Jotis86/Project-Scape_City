@@ -1,5 +1,13 @@
 import streamlit as st
 import time
+import os
+
+# Mostrar imagen de título
+image_path = os.path.join("..", "images", "imagen.png")
+if os.path.exists(image_path):
+    st.image(image_path)
+else:
+    st.error(f"La imagen no se encuentra en la ruta: {image_path}")
 
 # Definir ubicaciones y objetos
 locations = {
