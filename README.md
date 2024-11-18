@@ -7,6 +7,8 @@
 ![Pull Requests](https://img.shields.io/github/issues-pr/Jotis86/Project-Scape_City)
 ![Forks](https://img.shields.io/github/forks/Jotis86/Project-Scape_City)
 ![Tamaño del Repositorio](https://img.shields.io/github/repo-size/Jotis86/Project-Scape_City)
+![Autor](https://img.shields.io/badge/autor-Juan%20Duran%20Bon-blue)
+![Licencia](https://img.shields.io/github/license/Jotis86/Project-Scape_City)
 
 
 ## 📜 Description
@@ -107,6 +109,10 @@ For any inquiries or suggestions, you can contact me at:
 ## 🤝 Collaborations and Suggestions
 
 Collaborations are welcome! If you have any suggestions or want to collaborate on the project, feel free to open an issue or send a pull request on the repository. You can also reach out to me directly via email or LinkedIn. Let's work together to make this project even better!
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
